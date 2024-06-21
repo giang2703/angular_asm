@@ -1,0 +1,23 @@
+<h3 align="top" class="p-1 fw-bold">DANH SÁCH TASK</h3>
+<div *ngFor="let task of list_task" class="mt-2">
+
+  <div class="ms-1">
+    <b>{{ task.ten_task }}</b><br/>
+    {{ task.mo_ta }}
+  </div>
+  <div class="mb-0 px-3 pb-2 border-bottom  d-flex">
+    <div class="col-6">
+      Priority: {{ task.priority }}<br/>
+      Status: {{ task.status }}
+    </div>
+    <div class="col-5">
+      Nhân viên {{task.nhan_vien_id}} <br>
+      Dự án: {{task.du_an_id}}
+    </div>
+    <div class="col-1">
+      <button class="btn btn-outline-warning btn-sm" [routerLink]="['/task/sua', task.id]">Sửa</button>
+      <button class="btn btn-outline-danger btn-sm" (click)="xoaTask(task.id)">Xóa</button>
+    </div>
+  </div>
+
+</div>

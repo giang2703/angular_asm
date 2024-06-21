@@ -1,0 +1,26 @@
+
+<h3 align="top" class="p-1 fw-bold">DANH SÁCH DỰ ÁN</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th class="p-2">ID</th>
+      <th class="p-2">Tên dự án</th>
+      <th class="p-2">Ngày bắt đầu</th>
+      <th  class="p-2">Tiền</th>
+      <th class="p-2"> Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let da of list_du_an">
+      <th class="p-2">{{da.id}}</th>
+      <td class="p-2">{{da.ten_du_an}}</td>
+      <td class="p-2">{{da.ngay_bat_dau|date:'dd/MM/yyyy'}}</td>
+      <td class="p-2">{{da.tien | number}} <sup>đ</sup></td>
+      <td  class=" p-2" > <!-- Cột mới cho các nút hành động -->
+        <button  class="btn btn-outline-warning btn-sm" [routerLink]="['/du_an/sua', da.id]">Sửa</button>
+        <button class="btn btn-outline-danger btn-sm" (click)="xoaDuAn(da.id)">Xóa</button>
+      </td>
+    </tr>
+
+  </tbody>
+</table>

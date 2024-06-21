@@ -1,0 +1,14 @@
+<form #frm1="ngForm" (ngSubmit)="xuly(frm1.value)" class="col-10 m-auto border px-3 mt-2">
+  <div class="mb-3">Tên
+    <input type="text" name="ten" ngModel class="form-control" required>
+  </div>
+  <div class="mb-3">Email
+    <input type="email" name="email" ngModel class="form-control" required>
+  </div>
+  <div class="mb-3">Mật khẩu
+    <input type="password" name="mat_khau" ngModel class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <button class="btn btn-outline-success">Đăng ký</button>
+  </div>
+</form>

@@ -1,0 +1,63 @@
+.container {
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand {
+  color: #0275d8;
+  font-size: 1.5em;
+}
+
+.nav-link {
+  color: #0275d8;
+  font-size: 20px;
+}
+
+.nav-linkk {
+  color: #555;
+  padding-left: 25px;
+  font-size: 18px;
+}
+
+.nav-linkk:hover,
+.nav-linkk:focus {
+  color: #0275d8;
+}
+
+.dropdown-menu {
+  background-color: #f7f7f7;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #0275d8;
+  color: #fff;
+}
+
+#cottrai {
+  padding: 15px;
+  border-right: 1px solid #ddd;
+}
+
+
+#cotphai {
+  padding: 15px;
+  border-left: 1px solid #ddd;
+  height: 100vh; /* Chiều cao bằng 100% chiều cao cửa sổ trình duyệt */
+  box-sizing: border-box;
+}
+
+.btn-outline-success {
+  border-color: #0275d8;
+  color: #0275d8;
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:focus {
+  background-color: #0275d8;
+  color: #fff;
+}
+
+form.d-flex {
+  margin-bottom: 20px;
+}
+

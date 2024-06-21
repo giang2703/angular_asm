@@ -1,0 +1,7 @@
+.btn {
+  margin-right: 5px; /* Thêm khoảng cách bên phải cho mỗi nút */
+}
+
+.btn-outline-warning {
+  margin-right: 10px; /* Thêm khoảng cách bên phải cho nút 'Sửa' */
+}
